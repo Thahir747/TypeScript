@@ -28,7 +28,7 @@ varScope()
 */
 
 // Example 2
-function blockScope(){
+/* function blockScope(){
     if(true){
         let ms="Hello let"
         const greet="Hello const"
@@ -41,4 +41,23 @@ function blockScope(){
     //console.log(greet)
 }
 
-blockScope()
+blockScope() */
+
+function scopediff(){
+
+    if(true){
+        var num1=10
+        let num2=20
+        const num3=30
+        // console.log(num1)
+        // console.log(num2)
+        // console.log(num3)
+    }
+
+    // console.log(num1)
+    // console.log(num2)
+    // console.log(num3)
+
+}
+
+scopediff()

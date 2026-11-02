@@ -1,6 +1,4 @@
-let i=0
-
-// for(i=1;i<10;i++){
+// for(let i=1;i<10;i++){
 //     console.log(i)
 // }
 
@@ -13,9 +11,30 @@ let i=0
 } */
 
 //even method 2
-for(i=0;i<=10;i+=2){
-    
-        console.log(i)
-    
-    
+/* for(let i=0;i<=10;i+=2){
+        console.log(i) 
+} */
+
+        // Scenario 1
+/* let i:number;  // global variable 
+
+for(i=1;i<=5;i++){  // if i write like this for(let i=1;i<=10;i+=2) then it will be anther variable
+    console.log(i)    
 }
+console.log("outside loop",i)  */
+
+
+// Scenario 2
+/* let i:number;  // global variable 
+
+for(let i=1;i<=5;i++){  // if i write like this for(let i=1;i<=10;i+=2) then it will be anther variable
+    console.log(i)    
+}
+console.log("outside loop",i)  //this makes error */
+
+
+let i:number
+for (i=1;i<=5;i++);
+
+console.log("outside loop",i)
+

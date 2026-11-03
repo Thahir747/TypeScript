@@ -17,13 +17,13 @@ let va=(x:number,y:number):number=>{
 console.log(va(5,8))
  */
 
-//example 2: with implicit return  (only when single statement is there)
+//example 3: with implicit return  (only when single statement is there)
 
 // let va=(x:number,y:number):number=> x+y
 // console.log(va(5,8))
 
 
-// example 3: arrow fn with optional parameter
+// example 4: arrow fn with optional parameter
 
 /* let test=(id:number,name:string,mailid?:string):void =>{  //if we give first para as optional followed should be optional
     console.log("Id:",id)
@@ -36,7 +36,7 @@ console.log(va(5,8))
 test(124,"fem","fem@gamil.com")
 test(124,"fem") */
 
-// example 4:  arrow fn with default parameters
+// example 5:  arrow fn with default parameters
 
 /* let test= (price:number,rate:number=6):void =>{
     
@@ -46,7 +46,7 @@ test(124,"fem") */
 test(5,2)
 test(6) */
 
-//Example 5:  arrow fn with Rest parameters
+//Example 6:  arrow fn with Rest parameters
 
 /* 
 let test= (...nums:number[])=>{

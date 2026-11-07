@@ -28,10 +28,10 @@ for(let i in fruites){
 
 // Ex:2 capture and print in uppercase
 
-/* console.log("Printing in UPPERCASE......")
+ console.log("Printing in UPPERCASE......")
 fruites.forEach((currentvalue)=>{
     console.log(currentvalue.toUpperCase())
-}) */
+}) 
 
 // 2. map()--
 //syntax -- array.map(function(currentvalue,index,array){})
@@ -93,5 +93,22 @@ let reduced=num.reduce((total,element)=>{
 
 console.log(reduced)
 
+// 5. some() -- checks if any element satisfies a condition
+//syntax: num.some(function(currentvalue,index,array){})
+
+//Ex: check array contains -ve number
+
+let hasNeg:boolean=num.some((element)=>element<0)
+console.log("Array contains negative number:",hasNeg)
 
 
+// 6. every() -- checks if all element satisfies a condition
+//syntax: num.every(function(currentvalue,index,array){})
+    
+//ex:1
+let allEven=num.every((element)=>element%2==0 )
+console.log("All elements even?:",allEven)
+
+//ex2
+let allGreaterThanOne=num.every((element)=>element>1 )
+console.log("All greater than one?:",allGreaterThanOne)
